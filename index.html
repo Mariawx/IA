@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Aposta Limpa | Retome o Controle da Sua Vida</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <div class="logo">Aposta<span>Limpa</span></div>
+    <nav>
+      <a href="#dilema">O Dilema</a>
+      <a href="#calculadora">Calculadora</a>
+      <a href="#solucoes">Soluções</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <h1>O jogo prometia facilidade, mas custou a sua paz?</h1>
+      <p>As apostas digitais foram desenhadas para prender sua atenção e seu dinheiro. Você não está sozinho e existe um caminho de volta.</p>
+      <a href="#solucoes" class="btn-main">Buscar Ajuda Agora</a>
+    </section>
+
+    <section id="dilema" class="cards-section">
+      <h2>Entenda a Armadilha Digital</h2>
+      <div class="grid">
+        <div class="card">
+          <h3>Ilusão de Ganho</h3>
+          <p>Algoritmos usam recompensas variáveis para liberar dopamina no cérebro, criando o mesmo ciclo viciante de substâncias químicas.</p>
+        </div>
+        <div class="card">
+          <h3>Acesso 24/7</h3>
+          <p>O cassino agora está no seu bolso. Sem barreiras físicas, o impulso de apostar acontece em segundos, a qualquer hora.</p>
+        </div>
+        <div class="card">
+          <h3>O Ciclo da Perda</h3>
+          <p>A tentativa de "recuperar o dinheiro perdido" é o principal gatilho que leva ao endividamento severo e ao isolamento.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="calculadora" class="interactive-section">
+      <h2>Simulador de Impacto Financeiro</h2>
+      <p>Veja quanto o hábito diário representa no seu orçamento ao longo do tempo:</p>
+      <div class="calc-box">
+        <label for="daily-value">Quanto você aposta por dia (R$)?</label>
+        <input type="number" id="daily-value" placeholder="Ex: 20" min="0" oninput="calculateLoss()" />
+        
+        <div class="result">
+          <p>Em 1 ano você terá gasto: <strong id="year-result">R$ 0,00</strong></p>
+          <p>Em 5 anos isso equivale a: <strong id="five-year-result">R$ 0,00</strong></p>
+        </div>
+      </div>
+    </section>
+
+    <section id="solucoes" class="solutions-section">
+      <h2>Caminhos para a Solução</h2>
+      <div class="grid">
+        <div class="card highlight">
+          <h3>1. Autoexclusão de CPF</h3>
+          <p>Bloqueie voluntariamente seu CPF em todas as casas de apostas autorizadas do país através do sistema de proteção ao consumidor.</p>
+          <a href="https://www.gov.br" target="_blank" class="btn-sub">Saiba como bloquear</a>
+        </div>
+        <div class="card highlight">
+          <h3>2. Apoio Psicológico Gratuito</h3>
+          <p>O SUS oferece suporte psicológico online sigiloso para dependência em apostas digitais diretamente pelo aplicativo oficial.</p>
+          <a href="https://www.gov.br/saude" target="_blank" class="btn-sub">Acessar Meu SUS Digital</a>
+        </div>
+        <div class="card highlight">
+          <h3>3. Grupos de Apoio</h3>
+          <p>Participe de reuniões gratuitas e anônimas para compartilhar experiências e fortalecer sua recuperação contínua.</p>
+          <a href="https://www.jogadoresanonimos.com.br" target="_blank" class="btn-sub">Jogadores Anônimos</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Aposta Limpa. Iniciativa de conscientização e apoio digital de alcance nacional.</p>
+  </footer>
+
+  <script>
+    function calculateLoss() {
+      const val = parseFloat(document.getElementById('daily-value').value) || 0;
+      const year = val * 365;
+      const fiveYears = year * 5;
+
+      document.getElementById('year-result').innerText = year.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' });
+      document.getElementById('five-year-result').innerText = fiveYears.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' });
+    }
+  </script>
+</body>
+</html>
