@@ -1,95 +1,87 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Aposta Limpa | Retome o Controle da Sua Vida</title>
-  <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aposta Consciente | Ilusão vs. Realidade</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <header>
-    <div class="logo">Aposta<span>Limpa</span></div>
-    <nav>
-      <a href="#dilema">O Dilema</a>
-      <a href="#calculadora">Calculadora</a>
-      <a href="#solucoes">Soluções</a>
-    </nav>
-  </header>
 
-  <main>
-    <section class="hero">
-      <h1>O jogo prometia facilidade, mas custou a sua paz?</h1>
-      <p>As apostas digitais foram desenhadas para prender sua atenção e seu dinheiro. Você não está sozinho e existe um caminho de volta.</p>
-      <a href="#solucoes" class="btn-main">Buscar Ajuda Agora</a>
-    </section>
+    <header>
+        <div class="logo">ApostaConsciente<span>.br</span></div>
+        <nav>
+            <a href="#dilema">O Dilema</a>
+            <a href="#simulador">Simulador</a>
+            <a href="#teste">Autoavaliação</a>
+            <a href="#solucao" class="btn-nav">Buscar Ajuda</a>
+        </nav>
+    </header>
 
-    <section id="dilema" class="cards-section">
-      <h2>Entenda a Armadilha Digital</h2>
-      <div class="grid">
-        <div class="card">
-          <h3>Ilusão de Ganho</h3>
-          <p>Algoritmos usam recompensas variáveis para liberar dopamina no cérebro, criando o mesmo ciclo viciante de substâncias químicas.</p>
-        </div>
-        <div class="card">
-          <h3>Acesso 24/7</h3>
-          <p>O cassino agora está no seu bolso. Sem barreiras físicas, o impulso de apostar acontece em segundos, a qualquer hora.</p>
-        </div>
-        <div class="card">
-          <h3>O Ciclo da Perda</h3>
-          <p>A tentativa de "recuperar o dinheiro perdido" é o principal gatilho que leva ao endividamento severo e ao isolamento.</p>
-        </div>
-      </div>
-    </section>
+    <main>
+        <section class="hero">
+            <h1>Apostas Digitais: Diversão ou Armadilha?</h1>
+            <p>Compreenda o impacto do vício em bets no Brasil e aprenda a retomar o controle da sua vida financeira e mental.</p>
+            <a href="#simulador" class="btn-primary">Testar a Sorte no Simulador</a>
+        </section>
 
-    <section id="calculadora" class="interactive-section">
-      <h2>Simulador de Impacto Financeiro</h2>
-      <p>Veja quanto o hábito diário representa no seu orçamento ao longo do tempo:</p>
-      <div class="calc-box">
-        <label for="daily-value">Quanto você aposta por dia (R$)?</label>
-        <input type="number" id="daily-value" placeholder="Ex: 20" min="0" oninput="calculateLoss()" />
-        
-        <div class="result">
-          <p>Em 1 ano você terá gasto: <strong id="year-result">R$ 0,00</strong></p>
-          <p>Em 5 anos isso equivale a: <strong id="five-year-result">R$ 0,00</strong></p>
-        </div>
-      </div>
-    </section>
+        <section id="dilema" class="cards-grid">
+            <div class="card">
+                <h3> O Algoritmo</h3>
+                <p>As plataformas usam dados e neurociência para manter o usuário jogando por mais tempo, criando um ciclo de recompensa rápida.</p>
+            </div>
+            <div class="card">
+                <h3> O Impacto Nacional</h3>
+                <p>Estudos apontam a perda do poder de compra das famílias e o endividamento acelerado de jovens e adultos no Brasil.</p>
+            </div>
+            <div class="card">
+                <h3> Regulação e Solução</h3>
+                <p>Educação financeira, limites de tempo/depósito obrigatórios e apoio psicológico são as bases para superar o problema.</p>
+            </div>
+        </section>
 
-    <section id="solucoes" class="solutions-section">
-      <h2>Caminhos para a Solução</h2>
-      <div class="grid">
-        <div class="card highlight">
-          <h3>1. Autoexclusão de CPF</h3>
-          <p>Bloqueie voluntariamente seu CPF em todas as casas de apostas autorizadas do país através do sistema de proteção ao consumidor.</p>
-          <a href="https://www.gov.br" target="_blank" class="btn-sub">Saiba como bloquear</a>
-        </div>
-        <div class="card highlight">
-          <h3>2. Apoio Psicológico Gratuito</h3>
-          <p>O SUS oferece suporte psicológico online sigiloso para dependência em apostas digitais diretamente pelo aplicativo oficial.</p>
-          <a href="https://www.gov.br/saude" target="_blank" class="btn-sub">Acessar Meu SUS Digital</a>
-        </div>
-        <div class="card highlight">
-          <h3>3. Grupos de Apoio</h3>
-          <p>Participe de reuniões gratuitas e anônimas para compartilhar experiências e fortalecer sua recuperação contínua.</p>
-          <a href="https://www.jogadoresanonimos.com.br" target="_blank" class="btn-sub">Jogadores Anônimos</a>
-        </div>
-      </div>
-    </section>
-  </main>
+        <!-- Elemento Interativo 1: Simulador de Probabilidade -->
+        <section id="simulador" class="interactive-section">
+            <h2>Simulador de Probabilidade de Bet</h2>
+            <p>Clique abaixo para simular 10 apostas seguidas na casa de apostas. Veja o resultado real da banca a longo prazo.</p>
+            
+            <div class="simulator-box">
+                <button id="btn-simular" class="btn-secondary">Simular 10 Apostas (R$ 10 cada)</button>
+                <div id="resultado-simulacao" class="result-display">
+                    Aguardando início...
+                </div>
+            </div>
+        </section>
 
-  <footer>
-    <p>&copy; 2026 Aposta Limpa. Iniciativa de conscientização e apoio digital de alcance nacional.</p>
-  </footer>
+        <!-- Elemento Interativo 2: Teste Rápido -->
+        <section id="teste" class="quiz-section">
+            <h2>Autoavaliação Rápida</h2>
+            <div id="quiz-container">
+                <p id="pergunta">Você costuma apostar para tentar recuperar o dinheiro que perdeu antes?</p>
+                <div class="quiz-buttons">
+                    <button onclick="responderQuiz(true)">Sim</button>
+                    <button onclick="responderQuiz(false)">Não</button>
+                </div>
+            </div>
+            <div id="quiz-resultado" class="hidden"></div>
+        </section>
 
-  <script>
-    function calculateLoss() {
-      const val = parseFloat(document.getElementById('daily-value').value) || 0;
-      const year = val * 365;
-      const fiveYears = year * 5;
+        <!-- Solução e Suporte -->
+        <section id="solucao" class="solution-section">
+            <h2>Onde Encontrar Ajuda Gratuitamente</h2>
+            <p>Se você ou alguém próximo precisa de ajuda para parar de apostar, existem caminhos seguros no Brasil:</p>
+            <ul>
+                <li><strong>Jogadores Anônimos do Brasil:</strong> Reuniões presenciais e online gratuitas.</li>
+                <li><strong>PRO-AMITI (IPq-HCFMUSP):</strong> Programa especializado no tratamento do jogo patológico.</li>
+                <li><strong>Apoio Emocional (CVV):</strong> Atendimento gratuito pelo número 188.</li>
+            </ul>
+        </section>
+    </main>
 
-      document.getElementById('year-result').innerText = year.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' });
-      document.getElementById('five-year-result').innerText = fiveYears.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' });
-    }
-  </script>
+    <footer>
+        <p>© 2026 ApostaConsciente.br — Plataforma Educativa e de Conscientização Digital.</p>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
